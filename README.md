@@ -69,7 +69,7 @@ The chatbot will generate and display responses about the specified programming 
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`API_KEY = your api key` 
 
 
 
@@ -101,9 +101,8 @@ SOFTWARE.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 ![chatWithAI](https://www.dropbox.com/scl/fi/qg1zhkb7m8bk5uchtr2fd/chatWithAI.jpeg?rlkey=to77bae42l42m35dplcieg0z9&dl=0)
+
 ## Usage/Examples
 - Run the following command in your python shell or command prompt and then you are good to go!
 
