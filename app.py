@@ -113,7 +113,7 @@ chatInterface = gr.Interface(
     outputs=outputs,
     title="Chatbot for ",
     description="Enter the name of a programming language.",
-    theme=gr.themes.Monochrome(),
+    theme=gr.themes.Base(),
 )
 
 chatInterface.launch(share=True)
