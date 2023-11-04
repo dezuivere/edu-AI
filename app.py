@@ -5,16 +5,15 @@ from gtts import gTTS
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv() # to load the env variable from .env file
 
 apiKey = os.getenv("API_KEY")
 
 palm.configure(api_key=apiKey)
 
-
 models = [m for m in palm.list_models(
 ) if 'generateText' in m.supported_generation_methods]
-model = models[0].name
+model = models[0].name   # It will select one of the model 
 
 
 def genResp(text):
@@ -57,7 +56,9 @@ def chatWithAI(language, question):
         "verilog", "ada", "racket", "fortran", "erlang",
         "f#", "powershell", "cobol", "d", "rpg",
         "julia", "dart", "labview", "apex", "r"
+        # additional languages can be added
     ]
+    
 
     if language:
         language = language.lower()
@@ -75,9 +76,9 @@ def chatWithAI(language, question):
     else:
         return "Please enter the name of a programming language."
 
+
+
 # this function will convert our text response into speech
-
-
 def text_to_speech(text):
     newText = text
     stars = ['**', '*']
